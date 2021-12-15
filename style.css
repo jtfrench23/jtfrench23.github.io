@@ -1,178 +1,176 @@
 * {
-  padding: 0px;
-  margin: 0px;
+    padding: 0px;
+    margin: 0px; 
 }
-body {
-  background-color: rgb(31, 28, 28);
+body{
+    background-color: rgb(31, 28, 28);
 }
-#container {
-  display: flex;
-  width: 1000px;
+#container{
+    display: flex;
+    width: 1000px;
+
 }
 #header {
-  background-color: black;
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: space-around;
-  color: white;
-  overflow-x: hidden;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    overflow-x: hidden;
 }
 #mainContent {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-.center {
-  width: fit-content;
-  display: inline-block;
-  margin: auto;
+.center{
+    width: fit-content;
+    display: inline-block;
+    margin: auto;
 }
-#sideContent {
-  margin-right: 20px;
-  display: inline-block;
-  vertical-align: top;
+#sideContent{
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
 }
 img {
-  width: 50px;
+    width: 50px;
 }
 #header h1 {
-  display: inline-block;
-  margin: 5px 10px;
+    display: inline-block;
+    margin: 5px 10px;
 }
 #header a {
-  position: relative;
-  top: 15px;
-  text-decoration: none;
-  color: white;
-  vertical-align: top;
-  margin: 10px 20px;
+    position: relative;
+    top: 15px;
+    text-decoration: none;
+    color: white;
+    vertical-align: top;
+    margin: 10px 20px;
 }
 #signout button {
-  background-color: rgb(31, 114, 153);
-  color: white;
-  width: 75px;
-  height: 20px;
-  display: inline-block;
-  margin: 15px;
+    background-color: rgb(31, 114, 153);
+    color: white;  
+    width: 75px;
+    height: 20px;
+    display: inline-block;
+    margin: 15px;
 }
 .pages {
-  width: fit-content;
-  margin: 0px 100px;
-  font-size: large;
+    width: fit-content;
+    margin: 0px 100px;
+    font-size: large;
 }
-#user {
-  width: 600px;
-  background-color: white;
-  border: 4px solid #999;
-  margin: 20px 0px;
-  border-radius: 5px;
-  font-size: 1.2rem;
+#user{
+    width: 600px;
+    background-color: white;
+    border: 4px solid #999;
+    margin: 20px 0px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    
 }
 .infoSection {
-  padding: 10px 40px;
-  display: block;
+    padding: 10px 40px;
+    display: block;
 }
-.infoSection img {
-  width: 15px;
-  display: flex;
+.infoSection img{
+    width: 15px;
+    display: flex;
 }
 
-.userTop {
-  background-color: rgb(31, 114, 153);
-  height: 75px;
+.userTop{
+    background-color: rgb(31, 114, 153);
+    height: 75px;
 }
-#profilePic {
-  margin-top: -55px;
-  width: 100px;
-  margin-left: 20px;
-  display: block;
+#profilePic{
+    margin-top: -55px;
+    width: 100px;
+    margin-left: 20px;
+    display: block;
 }
-.edit {
-  display: flex;
-  gap: 10px;
+.edit{
+    display: flex;
+    gap: 10px;
+
 }
 .edit img {
-  width: 20px;
+    width: 20px;
 }
 .location {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 .topLine {
-  height: 40px;
-  background-color: black;
-  color: white;
-  display: flex;
-  gap: 24px;
-  padding: 0px 20px;
-  align-items: center;
+    height: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    gap: 24px;
+    padding: 0px 20px;
+    align-items:center;
 }
 #education {
-  width: 600px;
-  display: block;
-  background-color: white;
-  border: 4px solid #999;
-  margin-top: 30px;
+    width: 600px;
+    display: block;
+    background-color: white;
+    border: 4px solid #999;
+    margin-top: 30px;
 }
 #requests {
-  width: 300px;
-  display: block;
-  background-color: white;
-  border: 4px solid #999;
-  margin-top: 30px;
+    width: 300px;
+    display: block;
+    background-color: white;
+    border: 4px solid #999;
+    margin-top: 30px;
 }
 #yourConnections {
-  width: 300px;
-  display: block;
-  background-color: white;
-  border: 4px solid #999;
-  margin-top: 30px;
+    width: 300px;
+    display: block;
+    background-color: white;
+    border: 4px solid #999;
+    margin-top: 30px;
 }
-.number {
-  background-color: gray;
-  border-radius: 50%;
-  width: fit-content;
-  height: fit-content;
-  text-align: center;
-  vertical-align: top;
-  padding: 5px;
+.number{
+    background-color: gray;
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    vertical-align: top;
+    padding: 5px;
 }
-.personRequest {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 15px 0px;
+.personRequest{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0px;
 }
-.personRequest .personImage {
-  border-radius: 50%;
-  width: 50px;
+.personRequest .personImage{
+    border-radius: 50%;
+    width: 50px;
 }
-.options {
-  margin-left: 50px;
+.options{
+    margin-left: 50px;
 }
-.options img {
-  width: 18px;
+.options img{
+    width: 18px;
 }
-.person {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 15px 0px;
+.person{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0px;
 }
 .person .personImage {
-  width: 50px;
-  border-radius: 50%;
+    width: 50px;
+    border-radius: 50%;
 }
 .more {
-  align-items: center;
-  width: 280px;
-  border-top: 4px solid #999;
-  margin-left: -40px;
-  padding: 10px 10px 0px 10px;
-}
-.post {
-  background-color: white;
-  margin-top: 30px;
-  border: 4px solid gray;
+    align-items: center;
+    width: 280px;
+    border-top: 4px solid #999;
+    margin-left: -40px;
+    padding: 10px 10px 0px 10px;
 }

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -18,9 +19,7 @@
                 <a href="#">My Profile</a>
                 <a href="#">Find Connection</a>
             </div>
-            <div id="signout">
-                <button>Sign Out</button>
-            </div>
+            <button id="signout">Sign Out</button>
         </div>
         <div id="mainContent">
             <div class="center">
@@ -31,17 +30,17 @@
                     <img src="icons/user-circle.png" alt="user-image" id="profilePic">
                     <div class="infoSection">
 
-                        <h2>John Doe</h2>
+                        <h2 id="userName">John Doe</h2>
                         <div class="location">
                             <img src="icons/map-marker.png" alt="map marker">
                             <h3>Seattle</h3>
                         </div>
-                        <div class="details">
+                        <p class="details">
                             Developer | Engineer | Problem Solver <br>Master of shadows and the Internet!
-                        </div>
+                        </p>
                         <div class="edit">
                             <img src="icons/gear.png" alt="gear icon">
-                            <a href="#">edit profile</a>
+                            <a href="#" onclick = "changeName()">edit profile</a>
                         </div>
                     </div>
                 </div>
@@ -60,25 +59,25 @@
                 <div id="requests">
                     <div class="topLine">
                         <div class="number">
-                            <h4>2</h4>
+                            <h4 id="requestNumber">2</h4>
                         </div>
                         <h4>Connections Requests</h4>
                     </div>
                     <div class="infoSection">
-                        <div class="personRequest">
+                        <div class="personRequest" id="todd">
                             <img src="icons/todd-s.jpg" alt="Picture of Todd" class="personImage">
                             <p class="black">Todd E</p>
                             <div class="options">
-                                <button><img src="icons/accept-circle.png" alt="accept button"></button>
-                                <button><img src="icons/close-circle.png" alt="deny button"></button>
+                                <button onclick="acceptRequest('#todd')"><img src="icons/accept-circle.png" alt="accept button"></button>
+                                <button onclick="rejectRequest('#todd')"><img src="icons/close-circle.png" alt="deny button"></button>
                             </div>
                         </div>
-                        <div class="personRequest">
+                        <div class="personRequest" id="phil">
                             <img src="icons/phil-s.jpg" alt="Picture of Phil" class="personImage">
                             <p class="black">Phil K</p>
                             <div class="options">
-                                <button><img src="icons/accept-circle.png" alt="accept button"></button>
-                                <button><img src="icons/close-circle.png" alt="deny button"></button>
+                                <button onclick="acceptRequest('#phil')"><img src="icons/accept-circle.png" alt="accept button"></button>
+                                <button onclick="rejectRequest('#phil')"><img src="icons/close-circle.png" alt="deny button"></button>
                             </div>
                         </div>
                     </div>
@@ -86,7 +85,7 @@
                 <div id="yourConnections">
                     <div class="topLine">
                         <div class="number">
-                            <h4>500+</h4>
+                            <h4 id="connectionNumber">500</h4>
                         </div>
                         <h4>Your Connections</h4>
                     </div>
